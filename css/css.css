@@ -1,0 +1,90 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+body{
+	color: #47a3da;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+.timeline{
+	width: 88%;
+	list-style: none;
+	position: relative;
+}
+/*   头部标题  */
+footer{
+	width: 97%;
+	margin: 0 auto;
+	padding: 3em 2em 2em 4em;
+}
+@media screen and (max-width: 55em) {
+	footer > h1{
+		text-align: center;
+	}
+	footer{
+		padding: 0;
+	}
+}
+/*  内容  */
+.timeline > li .tmtime{
+	position: absolute;
+	width: 25%;
+	left: -4%;
+	text-align: right;
+}
+@media screen and (max-width: 40em) {
+	.timeline > li .tmtime{
+		position: relative;
+		left: 0;
+		text-align: left;
+	}
+}
+.timeline > li .tmtime div:first-child{
+	color:#bdd0bd;
+}
+.timeline > li .tmtime div:last-child{
+	font-size: 3em;
+}
+@media screen and (max-width: 55em) {
+	.timeline > li .tmtime div:last-child{
+	font-size: 1.5em;
+}
+}
+.label{
+	font-size: 1.2em;
+	line-height: 1.4;
+	font-weight: 400;
+	color: #fff;
+	margin: 0 0 1em 25%;
+	background-color: #6cbfee;
+	border-radius: 5px;
+	padding: 2em;
+}
+@media screen and (max-width: 40em) {
+	.label{
+		padding: 0.8em 2em 0.8em 2em;
+		margin:0 0 1em 0;
+		font-size: 1em;
+	}
+}
+.label >h2{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+/*  分割线  */
+.line{
+	position: absolute;
+	left: 24.7%;
+	background-color: rgba(108, 191, 238, 0.75);
+	width: 0.5em;
+	height: 100%;
+}
+@media screen  and (max-width: 40em) {
+	.line{
+		display: none;
+	}
+}
